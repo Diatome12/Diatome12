@@ -1,76 +1,59 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Geleceğin Liderleri - Eğitim ve Gelişim Platformu</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Geleceğin Liderleri</h1>
-        <p>Bilim, Teknoloji, Uzay ve İnovasyon Alanında Kendinizi Geliştirin</p>
-        <nav>
-            <a href="#egitim">Eğitim Modülleri</a>
-            <a href="#mentorluk">Mentorluk</a>
-            <a href="#ilham">İlham Verici İçerikler</a>
-            <a href="#fonlama">Fonlama Destekleri</a>
-        </nav>
-    </header>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <section id="egitim">
-        <h2>Eğitim Modülleri</h2>
-        <p>Bilim, teknoloji, uzay ve inovasyon alanında uzmanlık kazanın.</p>
-        <div class="module-container">
-            <div class="module">
-                <h3>Bilim Modülleri</h3>
-                <p>Bilim dünyasında ileri düzeyde bilgi edinin.</p>
-                <button onclick="showMoreInfo('Bilim')">Daha Fazla</button>
-            </div>
-            <div class="module">
-                <h3>Teknoloji Modülleri</h3>
-                <p>Yapay zeka, veri bilimi ve yazılım mühendisliği.</p>
-                <button onclick="showMoreInfo('Teknoloji')">Daha Fazla</button>
-            </div>
-            <div class="module">
-                <h3>Uzay Modülleri</h3>
-                <p>Uzay keşifleri ve astrofizik hakkında bilgi.</p>
-                <button onclick="showMoreInfo('Uzay')">Daha Fazla</button>
-            </div>
-        </div>
-    </section>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
 
-    <section id="mentorluk">
-        <h2>Mentorluk</h2>
-        <p>Alanında uzman kişilerden rehberlik alın.</p>
-        <button onclick="showMentorshipInfo()">Mentorluk Programları</button>
-    </section>
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
 
-    <section id="ilham">
-        <h2>İlham Verici İçerikler</h2>
-        <p>Başarılı insanların hikayelerinden ilham alın.</p>
-        <div class="inspiration-container">
-            <div class="inspiration">
-                <h3>İnovasyon Hikayeleri</h3>
-                <p>Dünyayı değiştiren yenilikler hakkında öğrenin.</p>
-            </div>
-            <div class="inspiration">
-                <h3>Bilimsel Başarılar</h3>
-                <p>En yeni bilimsel başarılar ve araştırmalar.</p>
-            </div>
-        </div>
-    </section>
+header h1 {
+    margin-bottom: 0.5rem;
+}
 
-    <section id="fonlama">
-        <h2>Fonlama Destekleri</h2>
-        <p>Projelerinize destek bulabileceğiniz bir alan.</p>
-        <button onclick="showFundingInfo()">Fon Başvurusu Yapın</button>
-    </section>
+nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+}
 
-    <footer>
-        <p>&copy; 2023 Geleceğin Liderleri - Eğitim ve Gelişim Platformu</p>
-    </footer>
+section {
+    padding: 2rem;
+    text-align: center;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+.module-container,
+.inspiration-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+.module, .inspiration {
+    background-color: #fff;
+    padding: 1rem;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.module h3, .inspiration h3 {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
